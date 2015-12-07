@@ -1,0 +1,4 @@
+/node_modules/
+/.sass-cache/
+install.bat
+dploy.yaml

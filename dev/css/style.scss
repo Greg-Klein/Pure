@@ -1,0 +1,15 @@
+/*--------------------*\
+		Variables
+\*--------------------*/
+
+$fontSize: 62.5%; // = 10px
+$fontColor: #333;
+
+/*--------------------*\
+		Imports
+\*--------------------*/
+
+@import "partials/font";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/responsive";
