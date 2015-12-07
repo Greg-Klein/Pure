@@ -75,7 +75,7 @@ gulp.task('copy', function () {
     gulp.src('dev/font/**/*.*')
         .pipe(gulp.dest('dist/font/'));
 
-    gulp.src('*.{php,html}')
+    gulp.src('dev/*.{php,html}')
         .pipe(gulp.dest('dist/'));
 });
 

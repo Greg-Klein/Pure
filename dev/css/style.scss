@@ -3,7 +3,13 @@
 \*--------------------*/
 
 $fontSize: 62.5%; // = 10px
-$fontColor: #333;
+$color1: #152A38;
+$color2: #29435C;
+$color3: #556E53;
+$color4: #D1D4C9;
+$fontColor: $color4;
+$fontFamily: 'Lato', sans-serif;
+
 
 /*--------------------*\
 		Imports

@@ -1,6 +1,14 @@
 * { box-sizing: border-box; }
 
 body {
-	font-size: $fontSize;
+	font-size: $fontSize*1.4;
 	color: $fontColor;
+	background-color: $color1;
+	font-family: $fontFamily;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
