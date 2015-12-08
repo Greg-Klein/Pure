@@ -109,6 +109,7 @@
 	z-index: 9999;
 	background-color: $color1;
 	box-shadow: -2px 2px 20px rgba(#000, 0.5);
+	user-select: none;
 	transform: translateX(300px);
 	transition: transform 0.5s;
 
@@ -120,7 +121,6 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		//text-align: center;
 	}
 
 	li {
@@ -135,7 +135,6 @@
 		transition: all 0.3s;
 
 		&:hover {
-			//cursor: pointer;
 			background-color: $color2;
 		}
 
@@ -150,11 +149,9 @@
 	top: 10px;
 	left: 10px;
 	padding: 5px 10px;
-	border: 1px solid transparent; // To avoid icon movement on hover
 	transition: transform 0.5s;
 
 	&:hover {
-		border: 1px solid $fontColor;
 		cursor: pointer;
 	}
 }
@@ -201,7 +198,7 @@ header {
 	opacity: 0.7;
 }
 
-// Navigation Bar
+/* Navigation Bar */
 
 nav {
 	position: fixed;
@@ -217,8 +214,9 @@ nav {
 	top: 50%;
 	right: 20px;
 	padding: 10px 20px;
-	border: 1px solid transparent;	// To avoid icon movement on hover
+	border: 1px solid transparent;	/* To avoid icon movement on hover */
 	font-weight: 300;
+	user-select: none;
 	transition: border-color 0.3s;
 	transform: translateY(-50%);
 
@@ -239,6 +237,7 @@ nav {
 	margin: 0;
 	font-size: 3em;
 	font-weight: bolder;
+	user-select: none;
 	transform: translateY(-50%);
 
 	span {
@@ -312,11 +311,11 @@ section.big {
 }
 
 
-// Section Team
+/* Team Section */
 
-// Section Products
+/* Products Section */
 
-// Section Pricing
+/* Pricing Section */
 
 .pricing__card {
 	display: inline-block;
@@ -377,7 +376,7 @@ section.big {
 }
 
 
-// Section Testimonial
+/* Testimonial Section */
 
 .quote {
 	font-weight: 700;
@@ -397,3 +396,5 @@ section.big {
 		font-size: 2em;
 	}
 }
+
+/* Contact Section */

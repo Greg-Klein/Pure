@@ -20,7 +20,7 @@ gulp.task('scss', function(){
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .pipe(minifyCss())
+        //.pipe(minifyCss())
         .pipe(concat('main.css'))
         .pipe(gulp.dest('dist/css/'))
         .pipe(livereload());
@@ -30,7 +30,7 @@ gulp.task('vendorCss', function () {
     gulp.src('dev/css/vendor/**/*.css')
         .pipe(plumber())
         .pipe(concat('vendor.css'))
-        .pipe(minifyCss())
+        //.pipe(minifyCss())
         .pipe(gulp.dest('dist/css/'))
         .pipe(livereload());
 })
@@ -39,7 +39,7 @@ gulp.task('js', function () {
  
 	gulp.src('dev/js/*.js')
 	.pipe(concat('main.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
 	.pipe(gulp.dest('dist/js/'))
 	.pipe(livereload());
 });
@@ -49,7 +49,7 @@ gulp.task('vendorJs', function () {
     gulp.src('dev/js/vendor/**/*.js')
     .pipe(plumber())
     .pipe(concat('vendor.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('dist/js/'))
     .pipe(livereload());
 });

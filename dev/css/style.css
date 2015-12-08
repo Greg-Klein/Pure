@@ -1,15 +1,18 @@
 /*--------------------*\
-		Variables
-\*--------------------*/
-/*--------------------*\
-		Imports
+		Fonts
 \*--------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+/*--------------------*\
+		Animations
+\*--------------------*/
 .fadeInDown {
   opacity: 1 !important;
   transform: translateY(40px) !important; }
 
+/*--------------------*\
+		Base
+\*--------------------*/
 * {
   box-sizing: border-box; }
 
@@ -115,6 +118,7 @@ a {
   z-index: 9999;
   background-color: #152A38;
   box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.5);
+  user-select: none;
   transform: translateX(300px);
   transition: transform 0.5s; }
   .menu ul {
@@ -145,10 +149,8 @@ a {
   top: 10px;
   left: 10px;
   padding: 5px 10px;
-  border: 1px solid transparent;
   transition: transform 0.5s; }
   .menu__close:hover {
-    border: 1px solid #D1D4C9;
     cursor: pointer; }
 
 .menu__blocker {
@@ -186,6 +188,7 @@ header {
   background: url("../images/header.jpg") fixed;
   opacity: 0.7; }
 
+/* Navigation Bar */
 nav {
   position: fixed;
   top: 0;
@@ -200,7 +203,9 @@ nav {
   right: 20px;
   padding: 10px 20px;
   border: 1px solid transparent;
+  /* To avoid icon movement on hover */
   font-weight: 300;
+  user-select: none;
   transition: border-color 0.3s;
   transform: translateY(-50%); }
   .menu-btn i {
@@ -216,6 +221,7 @@ nav {
   margin: 0;
   font-size: 3em;
   font-weight: bolder;
+  user-select: none;
   transform: translateY(-50%); }
   .logo span {
     color: #556E53;
@@ -268,6 +274,9 @@ section.big {
   padding: 100px 20px;
   text-align: center; }
 
+/* Team Section */
+/* Products Section */
+/* Pricing Section */
 .pricing__card {
   display: inline-block;
   margin: 15px;
@@ -307,6 +316,7 @@ section.big {
   .pricing__card:hover {
     transform: scale(1.1); }
 
+/* Testimonial Section */
 .quote {
   font-weight: 700;
   color: #ccc;
@@ -320,3 +330,5 @@ section.big {
     margin: -30px auto 0;
     padding: 0;
     font-size: 2em; }
+
+/* Contact Section */
