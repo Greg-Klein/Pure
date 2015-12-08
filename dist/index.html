@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Pure | An HTML5-CSS3 web template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/vendor.css">
@@ -12,25 +12,53 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
-        <header>
+        <div id="loader" class="loader">
+                <div id="loader__square" class="sk-folding-cube">
+                  <div class="sk-cube1 sk-cube"></div>
+                  <div class="sk-cube2 sk-cube"></div>
+                  <div class="sk-cube4 sk-cube"></div>
+                  <div class="sk-cube3 sk-cube"></div>
+                </div>
+        </div>
+        <div id="menu__blocker" class="menu__blocker"></div>
+        <aside id="menu" class="menu">
+            <i id="menu__close" class="menu__close fa fa-angle-left fa-2x" onClick="hideMenu()"></i>
+            <ul>
+                <li><a href="#home"><i class="fa fa-home fa-2x"></i>HOME</a></li>
+                <li><a href="#team"><i class="fa fa-users fa-2x"></i>TEAM</a></li>
+                <li><a href="#products"><i class="fa fa-cubes fa-2x"></i>PRODUCTS</a></li>
+                <li><a href="#pricing"><i class="fa fa-shopping-cart fa-2x"></i>PRICING</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope fa-2x"></i>CONTACT</a></li>
+            </ul>
+        </aside>
+        <header id="home">
             <div class="header__bg"></div>
-            <nav>
+            <nav id="navigation">
                 <div class="logo">Your<span>LOGO</span>.</div>
-                <div class="menu-btn">MENU<i class="fa fa-bars"></i></div>
+                <div id="menu-btn" class="menu-btn" onClick="showMenu()">MENU<i class="fa fa-bars"></i></div>
             </nav>
             <div class="hero">
                 <h1>Hello World!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem aliquid necessitatibus ullam similique voluptas distinctio eum. Magni repellat expedita error quibusdam distinctio? Dicta necessitatibus, quaerat mollitia non labore voluptates.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem aliquid necessitatibus ullam similique voluptas distinctio eum.</p>
             </div>
             <div class="scroll">
-                <p>Scroll to continue</p>
-                <div class="fa fa-chevron-down fa-2x"></div>
+                <a href="#team"><i class="fa fa-chevron-down fa-2x"></i></a>
             </div>
         </header>
-        <section id="pricing">
+        <section id="team" class="big">
+        	<div class="content">
+        		<h2>Our team</h2>
+        	</div>
+        </section>
+        <section id="products" class="whiteBg big">
+        	<div class="content">
+        		<h2>Products</h2>
+        	</div>
+        </section>
+        <section id="pricing" class="big">
             <div class="content">
                 <h2>Pricing</h2>
-                <div class="card">
+                <div class="pricing__card">
                     <h3>Personnal</h3>
                     <i class="fa fa-user fa-3x"></i>
                     <h4><span class="currency">$</span>9 <span>/month<span></h4>
@@ -38,7 +66,7 @@
                     <p>Reprehenderit iure aspernatur ab beatae, repellendus maiores nulla esse cupiditate reiciendis delectus laudantium debitis ipsam harum ullam non praesentium earum a illum ratione. Laboriosam corrupti aspernatur accusantium, dolore qui a?</p>
                     <button>Learn More</button>
                 </div>
-                <div class="card">
+                <div class="pricing__card">
                     <h3>Business</h3>
                     <i class="fa fa-area-chart fa-3x"></i>
                     <h4><span class="currency">$</span>259 <span>/year<span></h4>
@@ -46,7 +74,7 @@
                     <p>Reprehenderit iure aspernatur ab beatae, repellendus maiores nulla esse cupiditate reiciendis delectus laudantium debitis ipsam harum ullam non praesentium earum a illum ratione. Laboriosam corrupti aspernatur accusantium, dolore qui a?</p>
                     <button>Learn More</button>
                 </div>
-                <div class="card">
+                <div class="pricing__card">
                     <h3>Expert</h3>
                     <i class="fa fa-briefcase fa-3x"></i>
                     <h4><span class="currency">$</span>699 <span>/year<span></h4>
@@ -56,6 +84,18 @@
                 </div>
             </div>
         </section>
+        <section id="testimonial" class="whiteBg">
+        	<div class="content">
+                <div class="quote">
+                    <p>&rdquo;</p>
+                    <blockquote>Iusto eaque blanditiis quasi saepe, voluptates esse placeat fuga doloribus quam, cum tempore odit!</blockquote>
+                </div>
+        	</div>
+        </section>
+        <footer id="contact">
+        	Footer
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
     </body>
