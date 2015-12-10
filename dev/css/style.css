@@ -275,6 +275,25 @@ section.big {
   text-align: center; }
 
 /* Team Section */
+.team__members {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .team__members article {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: #152A38;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
+  .team__members img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%; }
+
 /* Products Section */
 /* Pricing Section */
 .pricing__card {
@@ -332,3 +351,5 @@ section.big {
     font-size: 2em; }
 
 /* Contact Section */
+footer {
+  height: 300px; }

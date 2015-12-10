@@ -313,6 +313,30 @@ section.big {
 
 /* Team Section */
 
+.team__members {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	
+	article {
+		position: relative;
+		display: inline-block;
+		width: 300px;
+		margin: 20px;
+		padding: 20px;
+		background-color: #fff;
+		color: $color1;
+		box-shadow: 5px 5px 20px rgba(#000, 0.5);
+	}
+
+	img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 10px;
+		border-radius: 50%;
+	}
+}
+
 /* Products Section */
 
 /* Pricing Section */
@@ -398,3 +422,7 @@ section.big {
 }
 
 /* Contact Section */
+
+footer {
+	height: 300px;
+}
