@@ -308,11 +308,12 @@ section.big {
     border-bottom: 2px solid #27ae60; }
 
 .content {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 100px 20px;
   text-align: center; }
 
-/* Team Section */
-.team__members {
+.flex-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -322,16 +323,24 @@ section.big {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .team__members article {
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    color: #152A38;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
-  .team__members img {
+
+/* Team Section */
+.team__description {
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.team__member {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #152A38;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
+  .team__member img {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -339,10 +348,15 @@ section.big {
 
 /* Products Section */
 /* Pricing Section */
+.currency {
+  font-size: 0.5em;
+  vertical-align: super;
+  font-weight: normal; }
+
 .pricing__card {
   display: inline-block;
-  margin: 15px;
-  padding: 15px;
+  margin: 20px;
+  padding: 20px;
   width: 300px;
   border: 2px solid #556E53;
   color: #D1D4C9;
@@ -351,16 +365,11 @@ section.big {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s; }
   .pricing__card i {
-    margin: 20px 0; }
+    margin: 20px 0 0; }
   .pricing__card h4 {
+    margin: 30px 0;
+    font-size: 2em;
     color: #27ae60; }
-  .pricing__card .currency {
-    font-size: 0.5em;
-    vertical-align: super;
-    font-weight: normal; }
-  .pricing__card h4 {
-    margin: 20px 0;
-    font-size: 2em; }
     .pricing__card h4 span {
       font-size: 0.5em;
       font-weight: 300; }
@@ -368,7 +377,8 @@ section.big {
     margin: 20px 0 0;
     font-size: 2em; }
   .pricing__card p {
-    margin: 0 0 30px; }
+    margin: 0 0 30px;
+    text-align: justify; }
   .pricing__card button {
     width: auto;
     padding: 10px 20px;
@@ -377,6 +387,8 @@ section.big {
     background: #27ae60;
     font-size: 1.2em;
     text-shadow: 1px 1px 2px #1e8449; }
+    .pricing__card button:hover {
+      background-color: #1e8449; }
   .pricing__card:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
@@ -397,5 +409,54 @@ section.big {
     font-size: 2em; }
 
 /* Contact Section */
-footer {
-  height: 300px; }
+footer .content {
+  padding-bottom: 10px; }
+footer h3 {
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #D1D4C9; }
+footer ul {
+  margin-left: 20px !important;
+  padding: 0; }
+footer li {
+  margin: 10px 0; }
+footer hr {
+  height: 1px;
+  border: none;
+  background-color: #737F80; }
+
+.newsletter, .social, .about {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left; }
+
+.newsletter__form {
+  height: 50px;
+  overflow: hidden;
+  border-radius: 10px; }
+  .newsletter__form input, .newsletter__form button {
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    float: left; }
+  .newsletter__form input {
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 1.2em; }
+  .newsletter__form button {
+    width: 50px;
+    margin: 0;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-size: 2em;
+    background-color: #27ae60; }
+
+.about {
+  max-width: 300px; }
+
+.legal {
+  padding: 10px;
+  border-top: 1px solid #D1D4C9; }
