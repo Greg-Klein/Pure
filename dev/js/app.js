@@ -70,7 +70,7 @@ function showMenu() {
 	// show menu blocker
 	$("#menu__blocker").fadeIn();
 	// slide menu
-	$("#menu").css({
+	$("#menu__panel").css({
 		transform: "translateX(0)"
 	});
 	// rotate icon
@@ -80,7 +80,7 @@ function showMenu() {
 		});
 	}, 300);
 	// show items
-	$("#menu > ul > li").each(function(i) {
+	$(".menu-item").each(function(i) {
 		var row = $(this);
 		setTimeout(function() {
 			row.addClass('fadeInDown');
@@ -95,7 +95,7 @@ function hideMenu() {
 	// hide menu blocker
 	$("#menu__blocker").fadeOut();
 	// slide menu
-	$("#menu").css({
+	$("#menu__panel").css({
 		transform: "translateX(300px)"
 	});
 	// rotate icon
@@ -105,7 +105,7 @@ function hideMenu() {
 		});
 	}, 300);
 	// hide items
-	$("#menu > ul > li").each(function(i) {
+	$(".menu-item").each(function(i) {
 		var row = $(this);
 		setTimeout(function() {
 			row.removeClass('fadeInDown');
