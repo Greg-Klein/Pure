@@ -292,7 +292,7 @@ section.big {
 
 	h2 {
 		max-width: 50vw;
-		margin: 0 auto 80px;
+		margin: 0 auto 50px;
 		padding-bottom: 20px;
 		font-size: 3.5em;
 		border-bottom: 2px solid $color3;
@@ -339,16 +339,25 @@ section.big {
 	background-color: #fff;
 	color: $color1;
 	box-shadow: 5px 5px 20px rgba(#000, 0.5);
+}
 
-	img {
-		width: 100px;
-		height: 100px;
-		margin-bottom: 10px;
-		border-radius: 50%;
-	}
+.team__member__image {
+	height: 100px;
+	margin-bottom: 10px;
+	border-radius: 50%;
 }
 
 /* Products Section */
+
+.products__description {
+	text-align: justify;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.products__bg-img {
+	max-width: 100%;
+}
 
 /* Pricing Section */
 
@@ -484,10 +493,6 @@ footer {
 		border-bottom-left-radius: 0;
 		font-size: 2em;
 	}
-}
-
-.social {
-	
 }
 
 .about {

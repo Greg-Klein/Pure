@@ -279,7 +279,7 @@ section.big {
   min-height: 100vh; }
   section.big h2 {
     max-width: 50vw;
-    margin: 0 auto 80px;
+    margin: 0 auto 50px;
     padding-bottom: 20px;
     font-size: 3.5em;
     border-bottom: 2px solid #556E53; }
@@ -317,13 +317,21 @@ section.big {
   background-color: #fff;
   color: #152A38;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
-  .team__member img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    border-radius: 50%; }
+
+.team__member__image {
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%; }
 
 /* Products Section */
+.products__description {
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.products__bg-img {
+  max-width: 100%; }
+
 /* Pricing Section */
 .currency {
   font-size: 0.5em;
