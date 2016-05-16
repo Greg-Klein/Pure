@@ -5,7 +5,6 @@ $(document).ready(function() {
 	// Start listening for menu items click
 	$("a[href^='#']").click(function() {
 		var e = $(this).attr("href");
-		console.log(e);
 		scrollTo(e);
 		return false;	// return false to prevent default behaviour
 	});
@@ -23,8 +22,6 @@ $(document).ready(function() {
 
 /**
  * Smooth scroll function
- * use: onClick="scrollTo(event, 'target')"
- * example: onClick="scrollTo(event, 'home')"
  */
 function scrollTo(target) {
 	// hide menu
